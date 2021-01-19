@@ -1,16 +1,25 @@
 .app-grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 48px auto 48px;
   height: 100vh;
+}
+
+.app-grid__header {
+  font-size: medium;
+  background-color: antiquewhite;
 }
 
 .app-grid__main {
   overflow-y: scroll;
+  background-color: slategray;
 }
 
 .app-grid__main__card {
   border: solid 1px black;
   padding: 30px;
+  margin: 48px 48px;
+  font-size: small;
+  background-color: whitesmoke;
 }
 
 .app-grid__main__card__header {
@@ -26,4 +35,5 @@
 }
 
 .app-grid__footer {
+  background-color: teal;
 }
