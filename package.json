@@ -8,17 +8,17 @@
     "start": "live-server"
   },
   "keywords": [],
-  "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
+  "author": "Mandy Schwarze <mndys@icloud.com> (https://mndys.vercel.app/)",
   "license": "ISC",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/quiz-app.git"
+    "url": "git+https://github.com/mndys/quiz-app"
   },
   "bugs": {
-    "url": "https://github.com/badabam/quiz-app/issues"
+    "url": "https://github.com/mndys/quiz-app/issues"
   },
-  "homepage": "https://github.com/badabam/quiz-app#readme",
+  "homepage": "https://github.com/mndys/quiz-app#readme",
   "description": "",
   "devDependencies": {
     "htmlhint": "^0.14.2",
