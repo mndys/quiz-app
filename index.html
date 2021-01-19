@@ -6,7 +6,28 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body>
-    <h1>Quiz App</h1>
+  <body class="app-grid">
+    <header class="app-grid__header">
+      <h1>Quiz App</h1>
+    </header>
+    <main class="app-grid__main">
+      <section class="app-grid__main__card">
+        <header class="app-grid__main__card__header">
+          <h2>What's your name?</h2>
+          <details class="app-grid__main__card__show-answer">
+            <summary class="app-grid__main__card__show-answer--toggle-show">
+              Show Answer
+            </summary>
+            <p class="app-grid__main__card__show-answer__answer">Mandy</p>
+          </details>
+        </header>
+      </section>
+    </main>
+    <footer class="app-grid__footer">
+      <a> home </a>
+      <a> bookmarks </a>
+      <a> create </a>
+      <a> settings </a>
+    </footer>
   </body>
 </html>
