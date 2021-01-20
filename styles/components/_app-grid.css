@@ -26,6 +26,11 @@
   background-color: teal;
 }
 
+.app-grid__footer__icon {
+  height: 32px;
+  width: 32px;
+}
+
 .app-grid__main__card--icon {
   height: 32px;
   width: 32px;
