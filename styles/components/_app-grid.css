@@ -25,3 +25,8 @@
 .app-grid__footer {
   background-color: teal;
 }
+
+.app-grid__main__card--icon {
+  height: 32px;
+  width: 32px;
+}
