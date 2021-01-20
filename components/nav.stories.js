@@ -1,7 +1,7 @@
 import '../styles/index.css'
 
-import './components/nav.css'
-import html from './components/nav.html'
+import './nav.css'
+import html from './nav.html'
 
 export default {
   title: 'Navigation',
