@@ -15,23 +15,33 @@
 }
 
 .app-grid__main__card {
-  border: solid 1px black;
+  width: 128px;
+  height: 96px;
   padding: 30px;
   margin: 48px 48px;
+  border-radius: 15px;
   font-size: small;
   background-color: whitesmoke;
-}
-
-.app-grid__footer {
-  background-color: teal;
-}
-
-.app-grid__footer__icon {
-  height: 32px;
-  width: 32px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.6);
 }
 
 .app-grid__main__card--icon {
+  position: relative;
+  top: -42px;
+  left: 200px;
   height: 32px;
   width: 32px;
+}
+.app-grid__footer__nav {
+  background-color: teal;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  justify-content: center;
+}
+
+.app-grid__footer__nav__entry {
+  height: 16px;
+  width: 16px;
 }
