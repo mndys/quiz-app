@@ -1,12 +1,4 @@
-.nav {
-  background-color: teal;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 16px;
-  justify-content: center;
-}
-
-.nav__entry {
-  height: 16px;
-  width: 16px;
+.footer {
+  height: 48px;
+  background-color: var(--color--space-cadet);
 }
