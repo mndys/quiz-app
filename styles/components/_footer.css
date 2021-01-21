@@ -1,0 +1,12 @@
+.footer__nav {
+  background-color: teal;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  justify-content: center;
+}
+
+.footer__nav__entry {
+  height: 16px;
+  width: 16px;
+}

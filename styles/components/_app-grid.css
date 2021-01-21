@@ -1,27 +1,28 @@
 .app-grid {
   display: grid;
-  grid-template-rows: 48px auto 48px;
-  height: 100vh;
-}
-
-.app-grid__header {
-  font-size: medium;
-  background-color: antiquewhite;
-}
-
-.app-grid__main {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   overflow-y: scroll;
   background-color: slategray;
 }
 
-.app-grid__main__card {
-  border: solid 1px black;
+.app-grid__card {
+  position: relative;
+  /* height: 300px;
+  width: 280px; */
   padding: 30px;
   margin: 48px 48px;
+  border-radius: 15px;
   font-size: small;
   background-color: whitesmoke;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.6);
 }
 
-.app-grid__footer {
-  background-color: teal;
+.app-grid__card--icon {
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  height: 32px;
+  width: 32px;
 }
