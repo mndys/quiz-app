@@ -1,4 +1,4 @@
-.footer__nav {
+.nav {
   background-color: teal;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.footer__nav__entry {
+.nav__entry {
   height: 16px;
   width: 16px;
 }
