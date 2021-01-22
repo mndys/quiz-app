@@ -1,7 +1,12 @@
-.fa-circle {
-  color: var(--color--alice-blue);
+.buddies {
+  font-weight: 600;
+  color: var(--color--blue2);
 }
 
-.fa-inverse {
-  color: var(--color--space-cadet);
+.journal-heading {
+  line-height: 1.333;
+}
+
+.comprehension {
+  letter-spacing: -0.26px;
 }
