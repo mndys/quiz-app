@@ -10,6 +10,15 @@ const navBookmark = document.querySelector('[data-js=navBookmark]')
 const navCreate = document.querySelector('[data-js=navCreate]')
 const navSettings = document.querySelector('[data-js=navSettings]')
 
+const card1 = document.querySelector('[data-js=card1]')
+const card2 = document.querySelector('[data-js=card2]')
+const card3 = document.querySelector('[data-js=card3]')
+const card4 = document.querySelector('[data-js=card4]')
+const card5 = document.querySelector('[data-js=card5]')
+const card6 = document.querySelector('[data-js=card6]')
+
+const markedCards = document.querySelectorAll('.card__bookmark--marked')
+
 // Toggle bookmark
 bookmark1.addEventListener('click', () => {
   bookmark1.classList.toggle('card__bookmark--marked')
@@ -35,12 +44,31 @@ navHome.addEventListener('click', () => {
   navBookmark.classList.remove('nav__entry--active')
   navCreate.classList.remove('nav__entry--active')
   navSettings.classList.remove('nav__entry--active')
+
+  card1.classList.remove('hidden')
+  card2.classList.remove('hidden')
+  card3.classList.remove('hidden')
+  card4.classList.remove('hidden')
+  card5.classList.remove('hidden')
+  card6.classList.remove('hidden')
 })
 navBookmark.addEventListener('click', () => {
   navHome.classList.remove('nav__entry--active')
   navBookmark.classList.add('nav__entry--active')
   navCreate.classList.remove('nav__entry--active')
   navSettings.classList.remove('nav__entry--active')
+
+  card1.classList.add('hidden')
+  card2.classList.add('hidden')
+  card3.classList.add('hidden')
+  card4.classList.add('hidden')
+  card5.classList.add('hidden')
+  card6.classList.add('hidden')
+
+  markedCards.forEach(card => {
+    card.classList.remove('hidden')
+    console.log(card)
+  })
 })
 navCreate.addEventListener('click', () => {
   navHome.classList.remove('nav__entry--active')
