@@ -5,6 +5,11 @@ const bookmark4 = document.querySelector('[data-js=bookmark4]')
 const bookmark5 = document.querySelector('[data-js=bookmark5]')
 const bookmark6 = document.querySelector('[data-js=bookmark6]')
 
+const navHome = document.querySelector('[data-js=navHome]')
+const navBookmark = document.querySelector('[data-js=navBookmark]')
+const navCreate = document.querySelector('[data-js=navCreate]')
+const navSettings = document.querySelector('[data-js=navSettings]')
+
 // Toggle bookmark
 bookmark1.addEventListener('click', () => {
   bookmark1.classList.toggle('card__bookmark--marked')
@@ -23,4 +28,29 @@ bookmark5.addEventListener('click', () => {
 })
 bookmark6.addEventListener('click', () => {
   bookmark6.classList.toggle('card__bookmark--marked')
+})
+
+navHome.addEventListener('click', () => {
+  navHome.classList.add('nav__entry--active')
+  navBookmark.classList.remove('nav__entry--active')
+  navCreate.classList.remove('nav__entry--active')
+  navSettings.classList.remove('nav__entry--active')
+})
+navBookmark.addEventListener('click', () => {
+  navHome.classList.remove('nav__entry--active')
+  navBookmark.classList.add('nav__entry--active')
+  navCreate.classList.remove('nav__entry--active')
+  navSettings.classList.remove('nav__entry--active')
+})
+navCreate.addEventListener('click', () => {
+  navHome.classList.remove('nav__entry--active')
+  navBookmark.classList.remove('nav__entry--active')
+  navCreate.classList.add('nav__entry--active')
+  navSettings.classList.remove('nav__entry--active')
+})
+navSettings.addEventListener('click', () => {
+  navHome.classList.remove('nav__entry--active')
+  navBookmark.classList.remove('nav__entry--active')
+  navCreate.classList.remove('nav__entry--active')
+  navSettings.classList.add('nav__entry--active')
 })
