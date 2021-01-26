@@ -3,4 +3,5 @@
   grid-template-columns: repeat(auto-fit, 375px);
   overflow-y: scroll;
   background-color: slategray;
+  justify-content: center;
 }
