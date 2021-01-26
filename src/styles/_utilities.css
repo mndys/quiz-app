@@ -27,3 +27,7 @@
   justify-content: center !important;
   align-items: center !important;
 }
+
+.fa-inverse {
+  color: var(--color--space-cadet);
+}
