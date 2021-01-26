@@ -1,9 +1,8 @@
 import './nav.css'
-import html from './nav.html'
+import nav from './nav.html'
 
 export default {
-  title: 'Navigation',
-  component: html,
+  title: 'Components',
 }
 
-export const base = () => html
+export const base = () => nav
