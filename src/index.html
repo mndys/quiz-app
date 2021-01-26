@@ -17,11 +17,7 @@
 
     <main class="app-grid">
       <section class="card">
-        <img
-          src="material/assets/icons/bookmark-regular.svg"
-          alt="bookmark"
-          class="card__icon"
-        />
+        <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark1"></i>
         <h2>
           How do you make the number 7 even without addition, subtraction,
           multiplication, or division?
@@ -39,11 +35,7 @@
       </section>
 
       <section class="card">
-        <img
-          src="material/assets/icons/bookmark-regular.svg"
-          alt="bookmark"
-          class="card__icon"
-        />
+        <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark2"></i>
         <h2>The more you take, the more you leave behind. What am I?</h2>
         <details>
           <summary class="card__show-answer">Show Answer</summary>
@@ -58,11 +50,7 @@
       </section>
 
       <section class="card">
-        <img
-          src="material/assets/icons/bookmark-regular.svg"
-          alt="bookmark"
-          class="card__icon"
-        />
+        <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark3"></i>
         <h2>
           You live in a one story house made entirely of redwood. What color
           would the stairs be?
@@ -83,11 +71,7 @@
       </section>
 
       <section class="card">
-        <img
-          src="material/assets/icons/bookmark-regular.svg"
-          alt="bookmark"
-          class="card__icon"
-        />
+        <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark4"></i>
         <h2>What can you catch but never throw?</h2>
         <details>
           <summary class="card__show-answer">Show Answer</summary>
@@ -102,11 +86,7 @@
       </section>
 
       <section class="card">
-        <img
-          src="material/assets/icons/bookmark-regular.svg"
-          alt="bookmark"
-          class="card__icon"
-        />
+        <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark5"></i>
         <h2>What belongs to you, but other people use it more than you?</h2>
         <details>
           <summary class="card__show-answer">Show Answer</summary>
@@ -121,11 +101,7 @@
       </section>
 
       <section class="card">
-        <img
-          src="material/assets/icons/bookmark-regular.svg"
-          alt="bookmark"
-          class="card__icon"
-        />
+        <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark6"></i>
         <h2>What do you call two witches who live together?</h2>
         <details>
           <summary class="card__show-answer">Show Answer</summary>
@@ -142,26 +118,28 @@
 
     <footer class="footer">
       <nav class="nav">
-        <a class="nav__entry" href="index.html">
+        <a class="nav__entry nav__entry--active" data-js="navHome">
           <span class="fa-stack fa-lg"
             ><i class="fa fa-circle fa-stack-2x"></i
-            ><i class="fa fa-home fa-stack-1x fa-inverse"></i></span
+            ><i
+              class="fa fa-home fa-stack-1x fa-inverse card__bookmark--marked"
+            ></i></span
           >Home
         </a>
-        <a class="nav__entry" href="bookmarks.html">
+        <a class="nav__entry" data-js="navBookmark">
           <span class="fa-stack fa-lg"
             ><i class="fa fa-circle fa-stack-2x"></i
             ><i class="fa fa-bookmark fa-stack-1x fa-inverse"></i
           ></span>
           Bookmarks
         </a>
-        <a class="nav__entry" href="create.html">
+        <a class="nav__entry" data-js="navCreate">
           <span class="fa-stack fa-lg"
             ><i class="fa fa-circle fa-stack-2x"></i
             ><i class="fa fa-plus fa-stack-1x fa-inverse"></i></span
           >Create</a
         >
-        <a class="nav__entry" href="settings.html"
+        <a class="nav__entry" data-js="navSettings"
           ><span class="fa-stack fa-lg"
             ><i class="fa fa-circle fa-stack-2x"></i
             ><i class="fa fa-cogs fa-stack-1x fa-inverse"></i></span

@@ -1,0 +1,24 @@
+.card {
+  position: relative;
+  padding: 30px;
+  margin: 48px 48px;
+  border-radius: 15px;
+  font-size: small;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -7px;
+  right: 16px;
+  height: 32px;
+  width: 32px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px #0003;
+  -webkit-text-stroke: 2px var(--color--imperial-red);
+}
+
+.card__bookmark--marked {
+  color: var(--color--imperial-red);
+}
