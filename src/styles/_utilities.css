@@ -8,6 +8,12 @@
   align-items: center !important;
 }
 
+.flex-se {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+
 .m0 {
   margin: 0 !important;
 }
