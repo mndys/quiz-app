@@ -11,7 +11,7 @@
 .header > h1 {
   margin: 0;
   padding: 30px 80px;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 75% 25% 41% 59% / 63% 38% 62% 37%;
   border: 3px solid var(--color--alice-blue);
   text-shadow: 3px 1px 2px #000;
