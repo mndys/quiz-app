@@ -1,14 +1,9 @@
-.buddies {
-  font-weight: 600;
-  color: var(--color--blue2);
+.fa-circle {
+  color: var(--color--alice-blue) !important;
 }
 
-.journal-heading {
-  line-height: 1.333;
-}
-
-.comprehension {
-  letter-spacing: -0.26px;
+.fa-inverse {
+  color: var(--color--space-cadet) !important;
 }
 
 .m0 {
@@ -26,8 +21,4 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-}
-
-.fa-inverse {
-  color: var(--color--space-cadet);
 }
