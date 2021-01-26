@@ -6,7 +6,7 @@
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint",
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "snowpack build && mv _site public",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
