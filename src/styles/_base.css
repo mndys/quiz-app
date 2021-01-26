@@ -22,3 +22,15 @@ input,
 button {
   font-size: 1em;
 }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  background: lightgray;
+  color: var(--color--space-cadet);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
