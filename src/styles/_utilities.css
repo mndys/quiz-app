@@ -1,9 +1,10 @@
-.fa-circle {
-  color: var(--color--alice-blue) !important;
-}
-
-.fa-inverse {
-  color: var(--color--space-cadet) !important;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .m0 {
@@ -14,15 +15,14 @@
   width: 100% !important;
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
 .text-center {
   text-align: center;
+}
+
+.fa-circle {
+  color: var(--color--alice-blue) !important;
+}
+
+.fa-inverse {
+  color: var(--color--space-cadet) !important;
 }
