@@ -16,7 +16,7 @@
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.6);
 }
 
-.card--icon {
+.card__icon {
   position: absolute;
   top: -12px;
   right: 16px;
