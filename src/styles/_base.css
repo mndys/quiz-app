@@ -29,7 +29,7 @@ ul {
 }
 
 li {
-  background: lightgray;
+  background: var(--color--grey);
   color: var(--color--space-cadet);
   padding: 2px 7px;
   border-radius: 5px;
