@@ -13,6 +13,13 @@ const navBookmark = document.querySelector('[data-js=navBookmark]')
 const navCreate = document.querySelector('[data-js=navCreate]')
 const navSettings = document.querySelector('[data-js=navSettings]')
 
+// Get main sections (^= pages)
+const pages = document.querySelectorAll('.page')
+
+// Get each main section (^= page)
+const createPage = document.querySelector('.create-page')
+const homePage = document.querySelector('.app-grid')
+
 // Toggle bookmarks on home page
 bookmarks.forEach(bookmark => {
   bookmark.addEventListener('click', () => {
@@ -22,6 +29,12 @@ bookmarks.forEach(bookmark => {
 
 // Show all cards when navigating to home page
 navHome.addEventListener('click', () => {
+  pages.forEach(page => {
+    page.classList.add('hidden')
+  })
+
+  homePage.classList.remove('hidden')
+
   cards.forEach(card => {
     card.classList.remove('hidden')
   })
@@ -64,6 +77,12 @@ navCreate.addEventListener('click', () => {
   })
 
   navCreate.classList.add('nav__entry--active')
+
+  pages.forEach(page => {
+    page.classList.add('hidden')
+  })
+
+  createPage.classList.remove('hidden')
 })
 
 navSettings.addEventListener('click', () => {
