@@ -12,6 +12,16 @@ body {
   margin: 0;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 375px);
+  grid-template-rows: min-content;
+  overflow-y: scroll;
+  background-color: var(--color--manatee);
+  justify-content: center;
+  align-items: start;
+}
+
 h1,
 h2,
 h3 {
