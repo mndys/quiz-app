@@ -123,39 +123,40 @@
             ><h2 class="create-page__form__heading">Your question:</h2></label
           >
           <textarea
-            autofocus
             class="create-page__form__add-question"
             maxlength="100"
-            placeholder="Riddle me this..."
-            required
-            rows="5"
-            spellcheck="true"
-            type="text"
-          ></textarea>
-          <label class="create-page__form__label"
-            ><h2 class="create-page__form__heading">Your answer:</h2></label
-          >
-          <textarea
-            class="create-page__form__add-answer"
-            type="text"
-            maxlength="300"
-            autofocus
-            placeholder="Mind-bending answer"
+            placeholder="make it a tough one!"
             required
             rows="4"
             spellcheck="true"
             type="text"
           ></textarea>
+          <div class="create-page__form__add-question__counter"></div>
+          <label class="create-page__form__label"
+            ><h2 class="create-page__form__heading">Your answer:</h2></label
+          >
+          <textarea
+            class="create-page__form__add-answer"
+            maxlength="300"
+            placeholder="a mind-bending answer goes here"
+            required
+            rows="4"
+            spellcheck="true"
+            type="text"
+          ></textarea>
+          <div class="create-page__form__add-answer__counter"></div>
           <label class="create-page__form__label"
             ><h2 class="create-page__form__heading">Matching tags:</h2></label
           >
-          <input
-            class="create-page__form__add-answer"
-            type="text"
+          <textarea
+            class="create-page__form__add-tags"
             maxlength="300"
-            autofocus
-            placeholder="Tag1, Tag2, Tag3, Tag4, Tag5"
-          />
+            placeholder="awesome, amazing, supercalifragilisticexpialidocious"
+            rows="2"
+            type="text"
+          ></textarea>
+          <div class="create-page__form__add-tags__counter"></div>
+
           <button class="create-page__form__button">Submit</button>
         </form>
       </section>

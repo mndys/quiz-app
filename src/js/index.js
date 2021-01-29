@@ -23,10 +23,63 @@ const homePage = document.querySelector('.app-grid')
 // Get Header Heading
 const headerHeading = document.querySelector('h1')
 
-// Get Add Question Field
-const addQuestion = document.querySelector('textarea')
+// Get form
+const form = document.querySelector('form')
+
+// Get textareas
+const questionArea = document.querySelector('.create-page__form__add-question')
+const answerArea = document.querySelector('.create-page__form__add-answer')
+const tagsArea = document.querySelector('.create-page__form__add-tags')
+
+// Get character counters
+const questionCounter = document.querySelector(
+  '.create-page__form__add-question__counter'
+)
+const answerCounter = document.querySelector(
+  '.create-page__form__add-answer__counter'
+)
+const tagCounter = document.querySelector(
+  '.create-page__form__add-tags__counter'
+)
+
+// Get button
+const formButton = document.querySelector('.create-page__form__button')
+
+/* ALPHA TESTING 
+tagsArea.addEventListener('input', () => {
+  return tagCounter.textContent.match(/,/g)
+  ? (tagCounter.textContent = tagCounter.textContent.match(/,/g).length - 5)
+  : (tagCounter.textContent = 5)
+})*/
 
 /* Functions */
+
+// Prevent form from submitting & delete all input
+form.addEventListener('keyup', function (event) {
+  if (event.key === 'Enter') {
+    formButton.click()
+  }
+})
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+
+  // add lines that return form input and make new card
+
+  form.reset()
+  questionArea.focus()
+})
+
+// Add counters to textareas
+
+questionArea.addEventListener('input', () => {
+  questionCounter.textContent =
+    questionArea.maxLength - questionArea.value.length
+})
+
+answerArea.addEventListener('input', () => {
+  answerCounter.textContent = answerArea.maxLength - answerArea.value.length
+})
 
 // Toggle bookmarks on home page
 bookmarks.forEach(bookmark => {
@@ -100,7 +153,7 @@ navCreate.addEventListener('click', () => {
 
   headerHeading.textContent = 'create'
 
-  addQuestion.focus()
+  questionArea.focus()
 })
 
 navSettings.addEventListener('click', () => {
