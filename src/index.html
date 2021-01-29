@@ -14,7 +14,6 @@
     <header class="header">
       <h1>riddle me this…</h1>
     </header>
-
     <main class="">
       <section class="page app-grid">
         <section class="card" data-js="card">
@@ -55,7 +54,7 @@
         <section class="card" data-js="card">
           <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark"></i>
           <h2>
-            You live in a one story house made entirely of redwood. What color
+            You live in a one story house made entirely of redwood. What colour
             would the stairs be?
           </h2>
           <details>
@@ -118,7 +117,40 @@
           </ul>
         </section>
       </section>
-      <section class="page create-page hidden"></section>
+      <section class="page create-page hidden">
+        <form class="create-page__form">
+          <label
+            >Your question:<input
+              class="create-page__form__add-question"
+              type="text"
+              maxlength="100"
+              autofocus
+              placeholder="Riddle me this..."
+              required
+            />
+          </label>
+          <label
+            >Your answer:<input
+              class="create-page__form__add-answer"
+              type="text"
+              maxlength="300"
+              autofocus
+              placeholder="Mindbending answer"
+              required
+            />
+          </label>
+          <label
+            >Matching tags:<input
+              class="create-page__form__add-answer"
+              type="text"
+              maxlength="300"
+              autofocus
+              placeholder="Tag1, Tag2, Tag3, Tag4, Tag5"
+            />
+          </label>
+          <button class="create-page__form__button">Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">

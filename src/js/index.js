@@ -20,6 +20,11 @@ const pages = document.querySelectorAll('.page')
 const createPage = document.querySelector('.create-page')
 const homePage = document.querySelector('.app-grid')
 
+// Get Header Heading
+const headerHeading = document.querySelector('h1')
+
+/* Functions */
+
 // Toggle bookmarks on home page
 bookmarks.forEach(bookmark => {
   bookmark.addEventListener('click', () => {
@@ -62,13 +67,19 @@ navHome.addEventListener('click', () => {
   })
 
   navHome.classList.add('nav__entry--active')
+
+  headerHeading.textContent = 'Riddle me this...'
+  headerHeading.style.fontSize = '20px'
 })
 
 navBookmark.addEventListener('click', () => {
   navItems.forEach(navItem => {
     navItem.classList.remove('nav__entry--active')
   })
+
   navBookmark.classList.add('nav__entry--active')
+
+  headerHeading.textContent = 'favourites'
 })
 
 navCreate.addEventListener('click', () => {
@@ -83,6 +94,8 @@ navCreate.addEventListener('click', () => {
   })
 
   createPage.classList.remove('hidden')
+
+  headerHeading.textContent = 'create'
 })
 
 navSettings.addEventListener('click', () => {
