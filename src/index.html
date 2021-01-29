@@ -119,35 +119,43 @@
       </section>
       <section class="page create-page hidden">
         <form class="create-page__form">
-          <label
-            >Your question:<input
-              class="create-page__form__add-question"
-              type="text"
-              maxlength="100"
-              autofocus
-              placeholder="Riddle me this..."
-              required
-            />
-          </label>
-          <label
-            >Your answer:<input
-              class="create-page__form__add-answer"
-              type="text"
-              maxlength="300"
-              autofocus
-              placeholder="Mindbending answer"
-              required
-            />
-          </label>
-          <label
-            >Matching tags:<input
-              class="create-page__form__add-answer"
-              type="text"
-              maxlength="300"
-              autofocus
-              placeholder="Tag1, Tag2, Tag3, Tag4, Tag5"
-            />
-          </label>
+          <label class="create-page__form__label"
+            ><h2 class="create-page__form__heading">Your question:</h2></label
+          >
+          <textarea
+            autofocus
+            class="create-page__form__add-question"
+            maxlength="100"
+            placeholder="Riddle me this..."
+            required
+            rows="5"
+            spellcheck="true"
+            type="text"
+          ></textarea>
+          <label class="create-page__form__label"
+            ><h2 class="create-page__form__heading">Your answer:</h2></label
+          >
+          <textarea
+            class="create-page__form__add-answer"
+            type="text"
+            maxlength="300"
+            autofocus
+            placeholder="Mind-bending answer"
+            required
+            rows="4"
+            spellcheck="true"
+            type="text"
+          ></textarea>
+          <label class="create-page__form__label"
+            ><h2 class="create-page__form__heading">Matching tags:</h2></label
+          >
+          <input
+            class="create-page__form__add-answer"
+            type="text"
+            maxlength="300"
+            autofocus
+            placeholder="Tag1, Tag2, Tag3, Tag4, Tag5"
+          />
           <button class="create-page__form__button">Submit</button>
         </form>
       </section>

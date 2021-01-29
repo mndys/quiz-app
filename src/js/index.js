@@ -23,6 +23,9 @@ const homePage = document.querySelector('.app-grid')
 // Get Header Heading
 const headerHeading = document.querySelector('h1')
 
+// Get Add Question Field
+const addQuestion = document.querySelector('textarea')
+
 /* Functions */
 
 // Toggle bookmarks on home page
@@ -96,6 +99,8 @@ navCreate.addEventListener('click', () => {
   createPage.classList.remove('hidden')
 
   headerHeading.textContent = 'create'
+
+  addQuestion.focus()
 })
 
 navSettings.addEventListener('click', () => {

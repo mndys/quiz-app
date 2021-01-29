@@ -1,0 +1,17 @@
+.create-page__form {
+  max-width: 360px;
+  padding: 18px;
+  margin: 0 auto;
+}
+
+.create-page__form__heading {
+  color: whitesmoke;
+  font-size: 1em;
+  font-weight: bold;
+  margin-block-end: 0.1em;
+  text-shadow: 2px 1px 3px black;
+}
+
+.create-page__form__label {
+  display: block;
+}
