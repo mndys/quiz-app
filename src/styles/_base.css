@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   display: grid;
   grid-template-rows: 48px auto 48px;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
   font-family: 'Raleway', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
