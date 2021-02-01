@@ -10,7 +10,7 @@ body {
   display: grid;
   grid-template-rows: 48px auto 48px;
   height: 100vh;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
@@ -22,8 +22,6 @@ main {
   grid-template-rows: min-content;
   overflow-y: scroll;
   background-color: var(--color--manatee);
-  justify-content: center;
-  align-items: start;
 }
 
 h1,
@@ -55,11 +53,11 @@ button {
   border: 2px solid var(--color--amaranth-red);
   transition: all 0.4s ease 0s;
   text-shadow: 1px 1px 3px black;
-  box-shadow: 1px 1px 3px 0 black;
+  box-shadow: 1px 1px 3px black;
 }
 
 button:active {
-  box-shadow: inset 1px 1px 3px 0 black;
+  box-shadow: inset 1px 1px 3px black;
 }
 
 ul {

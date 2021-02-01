@@ -42,8 +42,14 @@ const tagCounter = document.querySelector(
   '.create-page__form__add-tags__counter'
 )
 
-// Get button
+// Get button in form
 const formButton = document.querySelector('.create-page__form__button')
+
+// Get all answer buttons
+const answerButtons = document.querySelectorAll('.card__show-answer')
+
+// Get all answers
+const answers = document.querySelectorAll('.card__show-answer__answer')
 
 /* ALPHA TESTING 
 tagsArea.addEventListener('input', () => {
@@ -53,6 +59,14 @@ tagsArea.addEventListener('input', () => {
 })*/
 
 /* Functions */
+let clickAnswerButton = answerButtons.forEach(answerButton => {
+  answerButton.addEventListener('click', () => {
+    answerButton.textContent == 'hide answer'
+      ? (answerButton.textContent = 'show answer')
+      : (answerButton.textContent = 'hide answer')
+    answerButton.parentNode.querySelector('p').classList.toggle('hidden')
+  })
+})
 
 // Prevent form from submitting & delete all input
 form.addEventListener('keyup', function (event) {
@@ -64,14 +78,15 @@ form.addEventListener('keyup', function (event) {
 form.addEventListener('submit', event => {
   event.preventDefault()
 
-  // add lines that return form input and make new card
+  // ! add lines that return form input and make new card
 
   form.reset()
+  questionCounter.textContent = questionArea.maxLength
+  answerCounter.textContent = answerArea.maxLength
   questionArea.focus()
 })
 
 // Add counters to textareas
-
 questionArea.addEventListener('input', () => {
   questionCounter.textContent =
     questionArea.maxLength - questionArea.value.length
@@ -114,6 +129,11 @@ navBookmark.addEventListener('click', () => {
   markedCards.forEach(markedCard => {
     const parentCard = markedCard.closest('[data-js=card]')
     parentCard.classList.remove('hidden')
+    markedCard.parentNode
+      .querySelector('.card__show-answer__answer')
+      .classList.add('hidden')
+    markedCard.parentNode.querySelector('.card__show-answer').textContent =
+      'show answer'
   })
 })
 

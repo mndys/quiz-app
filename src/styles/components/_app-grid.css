@@ -1,7 +1,6 @@
 .app-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 375px);
-  grid-template-rows: min-content;
   overflow-y: scroll;
   background-color: var(--color--manatee);
   justify-content: center;
