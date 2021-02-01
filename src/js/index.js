@@ -1,55 +1,70 @@
 // Get all bookmarks
-const bookmarks = document.querySelectorAll('[data-js=bookmark]')
+const bookmarks = getByAllDataJs('bookmark')
 
 // Get all cards
-const cards = document.querySelectorAll('[data-js=card]')
+const cards = getByAllDataJs('card')
 
 //Get navigation
-const navItems = document.querySelectorAll('.nav__entry')
+const navItems = getAllByClass('.nav__entry')
 
 // Get Navigation items
-const navHome = document.querySelector('[data-js=navHome]')
-const navBookmark = document.querySelector('[data-js=navBookmark]')
-const navCreate = document.querySelector('[data-js=navCreate]')
-const navSettings = document.querySelector('[data-js=navSettings]')
+const navHome = getByDataJs('navHome')
+const navBookmark = getByDataJs('navBookmark')
+const navCreate = getByDataJs('navCreate')
+const navSettings = getByDataJs('navSettings')
 
 // Get main sections (^= pages)
-const pages = document.querySelectorAll('.page')
+const pages = getAllByClass('.page')
 
 // Get each main section (^= page)
-const createPage = document.querySelector('.create-page')
-const homePage = document.querySelector('.app-grid')
+const createPage = getByClass('.create-page')
+const homePage = getByClass('.app-grid')
 
 // Get Header Heading
-const headerHeading = document.querySelector('h1')
+const headerHeading = getByElement('h1')
 
 // Get form
-const form = document.querySelector('form')
+const form = getByElement('form')
 
 // Get textareas
-const questionArea = document.querySelector('.create-page__form__add-question')
-const answerArea = document.querySelector('.create-page__form__add-answer')
-const tagsArea = document.querySelector('.create-page__form__add-tags')
+const questionArea = getByClass('.create-page__form__add-question')
+const answerArea = getByClass('.create-page__form__add-answer')
+const tagsArea = getByClass('.create-page__form__add-tags')
 
 // Get character counters
-const questionCounter = document.querySelector(
-  '.create-page__form__add-question__counter'
-)
-const answerCounter = document.querySelector(
-  '.create-page__form__add-answer__counter'
-)
-const tagCounter = document.querySelector(
-  '.create-page__form__add-tags__counter'
-)
+const questionCounter = getByClass('.create-page__form__add-question__counter')
+const answerCounter = getByClass('.create-page__form__add-answer__counter')
+const tagCounter = getByClass('.create-page__form__add-tags__counter')
 
 // Get button in form
-const formButton = document.querySelector('.create-page__form__button')
+const formButton = getByClass('.create-page__form__button')
 
 // Get all answer buttons
-const answerButtons = document.querySelectorAll('.card__show-answer')
+const answerButtons = getAllByClass('.card__show-answer')
 
 // Get all answers
-const answers = document.querySelectorAll('.card__show-answer__answer')
+const answers = getAllByClass('.card__show-answer__answer')
+
+// Helper functions
+function getByDataJs(dataJsName, target = document) {
+  return target.querySelector(`[data-js="${dataJsName}"]`)
+}
+
+function getByClass(className, target = document) {
+  return target.querySelector(`${className}`)
+}
+
+function getByElement(elementName, target = document) {
+  return target.querySelector(`${elementName}`)
+}
+
+function getAllByClass(className, target = document) {
+  return target.querySelectorAll(`${className}`)
+}
+
+function getByAllDataJs(dataJsName, target = document) {
+  return target.querySelectorAll(`[data-js="${dataJsName}"]`)
+}
 
 /* ALPHA TESTING 
 tagsArea.addEventListener('input', () => {
