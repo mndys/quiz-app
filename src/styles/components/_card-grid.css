@@ -1,4 +1,4 @@
-.app-grid {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 375px);
   overflow-y: scroll;
@@ -7,7 +7,7 @@
   align-items: start;
 }
 
-.app-grid::after {
+.card-grid::after {
   content: '';
   display: block;
   height: 1px;
