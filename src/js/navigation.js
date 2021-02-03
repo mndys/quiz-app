@@ -16,7 +16,9 @@ export default function navigation() {
       })
 
       if (clickedButtonName == 'home') {
-        headerHeading.textContent = 'Riddle me this...'
+        headerHeading.innerHTML = `
+        riddle me this… <i class="fa fa-question headerHeading"></i>
+        `
       } else if (clickedButtonName == 'bookmarks') {
         headerHeading.textContent = 'favourites'
       } else if (clickedButtonName == 'create') {
