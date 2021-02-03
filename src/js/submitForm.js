@@ -2,7 +2,6 @@ import getByDataJs from './getByDataJs'
 import getByDataName from './getByDataName'
 
 export default function submitForm() {
-  const answerArea = getByDataJs('answerArea')
   const answerCounter = getByDataName('answerCounter')
   const form = getByDataJs('form')
   const questionArea = getByDataJs('questionArea')
