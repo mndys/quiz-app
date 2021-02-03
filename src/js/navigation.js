@@ -15,16 +15,16 @@ export default function navigation() {
         page.classList.toggle('hidden', clickedButtonName !== pageName)
       })
 
-      if (clickedButtonName == 'home') {
+      if (clickedButtonName === 'home') {
         headerHeading.innerHTML = `
         riddle me this… <i class="fa fa-question headerHeading"></i>
         `
-      } else if (clickedButtonName == 'bookmarks') {
+      } else if (clickedButtonName === 'bookmarks') {
         headerHeading.textContent = 'favourites'
-      } else if (clickedButtonName == 'create') {
+      } else if (clickedButtonName === 'create') {
         headerHeading.textContent = 'create'
         questionArea.focus()
-      } else if (clickedButtonName == 'settings') {
+      } else if (clickedButtonName === 'settings') {
         headerHeading.textContent = 'settings'
       }
       navButtons.forEach(button => {

@@ -5,7 +5,7 @@ export default function clickAnswerButton() {
 
   answerButtons.forEach(answerButton => {
     answerButton.addEventListener('click', () => {
-      answerButton.textContent == 'hide answer'
+      answerButton.textContent === 'hide answer'
         ? (answerButton.textContent = 'show answer')
         : (answerButton.textContent = 'hide answer')
       answerButton.parentNode.querySelector('p').classList.toggle('hidden')

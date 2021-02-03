@@ -10,8 +10,8 @@ export default function bookmark() {
       // ! Investigate: The following doesn't work as expected
       if (bookmark.classList.contains('card__bookmark--marked')) {
         if (
-          (getByDataName('bookmarks').innerHTML =
-            '<div class="lonely">What lonely life one must lead who has no favourites in this World...<br />Get some!</div>')
+          getByDataName('bookmarks').innerHTML ===
+          '<div class="lonely">What lonely life one must lead who has no favourites in this World...<br />Get some!</div>'
         ) {
           getByDataName('bookmarks').innerHTML = bookmark.parentNode.outerHTML
         } else {
