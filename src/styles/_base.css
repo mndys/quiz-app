@@ -40,10 +40,10 @@ h2 {
 }
 
 button {
-  font-size: 0.9em;
+  font-size: 0.8rem;
   padding: 10px 20px;
   display: block;
-  margin: 28px auto;
+  margin: 1rem auto;
   color: whitesmoke;
   text-transform: uppercase;
   text-decoration: none;
@@ -60,7 +60,9 @@ button:active {
 }
 
 ul {
+  padding-top: 1rem;
   padding-left: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -76,4 +78,15 @@ textarea {
   width: 100%;
   font: inherit;
   padding: 5px 10px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  overflow-y: scroll;
+  background-color: var(--color--manatee);
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  padding: 2rem;
 }

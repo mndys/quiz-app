@@ -17,7 +17,7 @@
       </h1>
     </header>
     <main>
-      <section class="card-grid" data-js="page" data-name="home">
+      <section class="page" data-js="page" data-name="home">
         <section class="card" data-js="card">
           <i class="card__bookmark fa fa-3x fa-bookmark" data-js="bookmark"></i>
           <h2>
@@ -127,14 +127,18 @@
         </section>
       </section>
       <section
-        class="bookmarks hidden"
+        class="page bookmarks hidden"
         data-js="page"
         data-name="bookmarks"
       ></section>
-      <section class="create-page hidden" data-js="page" data-name="create">
+      <section
+        class="page create-page hidden"
+        data-js="page"
+        data-name="create"
+      >
         <form class="form" data-js="form">
           <label class="form__label"
-            ><h2 class="form__heading">Your question:</h2></label
+            ><h2 class="form__heading mt0">Your question:</h2></label
           >
           <textarea
             class="form__input"
@@ -190,7 +194,7 @@
         </form>
       </section>
       <section
-        class="settings-page hidden"
+        class="page settings-page hidden"
         data-js="page"
         data-name="settings"
       ></section>
