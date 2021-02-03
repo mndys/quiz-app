@@ -1,16 +1,17 @@
-.create-page__form {
+.form {
   max-width: 360px;
   padding: 18px;
   margin: 0 auto;
   display: relative;
 }
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--color--grey);
   opacity: 1; /* Firefox */
 }
 
-.create-page__form__heading {
+.form__heading {
   color: whitesmoke;
   font-size: 1em;
   font-weight: bold;
@@ -18,13 +19,11 @@
   text-shadow: 2px 1px 3px black;
 }
 
-.create-page__form__label {
+.form__label {
   display: block;
 }
 
-.create-page__form__add-answer__counter,
-.create-page__form__add-question__counter,
-.create-page__form__add-tags__counter {
+.form__counter {
   position: relative;
   font-size: 0.7em;
   color: var(--color--grey);
@@ -33,14 +32,4 @@
   width: 19px;
   height: 0;
   text-align: right;
-}
-
-.create-page__form__add-answer__counter {
-  top: -28px;
-  left: 297px;
-}
-
-.create-page__form__add-tags__counter {
-  top: -28px;
-  left: 311px;
 }
