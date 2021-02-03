@@ -11,8 +11,9 @@ export default function submitForm() {
     event.preventDefault()
     // ! add lines that return form input and make new card
     form.reset()
-    questionCounter.textContent = ''
-    answerCounter.textContent = ''
+    Array.from(document.querySelectorAll('.form__counter')).map(
+      counter => (counter.textContent = '')
+    )
     questionArea.focus()
   })
 }
