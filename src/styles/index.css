@@ -2,9 +2,8 @@
 @import './_utilities.css';
 @import './_variables.css';
 
-@import './components/_card-grid.css';
 @import './components/_card.css';
-@import './components/_create-page__form.css';
+@import './components/_form.css';
 @import './components/_footer.css';
 @import './components/_header.css';
 @import './components/_nav.css';

@@ -5,6 +5,16 @@
   align-content: center;
 }
 
+.nav::before {
+  content: '';
+  position: absolute;
+  bottom: 48px;
+  height: 4px;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(transparent, var(--color--space-cadet));
+}
+
 .nav__entry {
   width: 56px;
   height: 48px;
